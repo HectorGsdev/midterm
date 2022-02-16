@@ -10,7 +10,7 @@ error_reporting(E_ALL);
 
 //Start the session
 session_start();
-var_dump($_SESSION);
+//var_dump($_SESSION);
 
 //Require the autoload file
 require_once('vendor/autoload.php');
@@ -21,7 +21,7 @@ $f3 = Base::instance();
 
 //Define a default route
 $f3->route('GET /', function() {
-    //echo "<h1>My Diner</h1>";
+//    echo "<h1>default route midterm</h1>";
 
     $view = new Template();
     echo $view->render('views/home.html');
@@ -29,10 +29,10 @@ $f3->route('GET /', function() {
 
 //Define a route for the survey
 $f3->route('GET /survey', function() {
-    //echo "<h1>My Diner</h1>";
+    echo "<h1>My term default router</h1>";
 
-    $view = new Template();
-    echo $view->render('views/survey.html');
+    //$view = new Template();
+    //echo $view->render('views/survey.html');
 });
 
     //Clear the session data
