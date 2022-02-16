@@ -14,6 +14,7 @@ session_start();
 
 //Require the autoload file
 require_once('vendor/autoload.php');
+require ('model/data-layer.php');
 
 
 //Create an instance of the Base class
@@ -28,8 +29,9 @@ $f3->route('GET /', function() {
 });
 
 //Define a route for the survey
-$f3->route('GET /survey', function() {
+$f3->route('GET /survey', function($f3) {
 //    echo "<h1>My term default router</h1>";
+    $f3->set('options', getOptions());
 
     $view = new Template();
     echo $view->render('views/survey.html');
