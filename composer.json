@@ -1,0 +1,14 @@
+{
+  "name": "hectorg1/328/midterm",
+  "description": "midterm",
+  "license": "open source",
+  "authors": [
+    {
+      "name": "Hector Gonzalez",
+      "email": "gonzalez.hector@student.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
