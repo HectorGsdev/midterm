@@ -29,10 +29,10 @@ $f3->route('GET /', function() {
 
 //Define a route for the survey
 $f3->route('GET /survey', function() {
-    echo "<h1>My term default router</h1>";
+//    echo "<h1>My term default router</h1>";
 
-    //$view = new Template();
-    //echo $view->render('views/survey.html');
+    $view = new Template();
+    echo $view->render('views/survey.html');
 });
 
     //Clear the session data
